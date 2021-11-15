@@ -40,7 +40,22 @@
 	</style>
 </head>
 <body>
-	<main>
-		n
-	</main>
+	<div class="container mt-5">
+	<form action="conn.php" method="POST">
+		<label for="title" class="mb-2">Please Enter your page title:</label>
+		<input type="name" name="title" maxlength="1000" class="form-control mb-2">
+		<label for="title" class="mb-2">Please Enter your name:</label>
+		<input type="name" name="author" maxlength="50" class="form-control mb-4">
+		<textarea type="textarea" name="blog" maxlength="1000" class="form-control mt-4" placeholder="Try typing something" rows="10" cols="" spellcheck="spellcheck">
+			</textarea>
+			<label for="date" class="mt-4 mb-2">Date Posted-</label>
+		<input type="date" name="date" class="form-control ">
+		<label for="category" class="mb-2 mt-3">Choose a category</label>
+		<input type="name" name="category" class="form-control mb-4">
+		<div class="container-fluid text-center">
+		<button role="submit" type="submit" class="form-control mt-4 btn btn-dark" style="width: 50%">Post</button>
+	</div>
+		
+	</form>
+</div>
 </body>
